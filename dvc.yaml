@@ -13,4 +13,4 @@ stages:
       - data/processed/ratings_clean.csv
       - src/create_features.py
     outs:
-      - models/user_similarity.pkldvc dag
+      - models/user_similarity.pkl
