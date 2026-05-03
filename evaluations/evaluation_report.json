@@ -1,0 +1,24 @@
+{
+  "rating": {
+    "rmse": 1.023124646445527,
+    "mae": 0.8102727823774769,
+    "mean_error": 0.8102727823774769,
+    "max_error": 3.571543152234886,
+    "min_error": 0.00140214688563578
+  },
+  "coverage": {
+    "coverage_ratio": 1.0,
+    "recommended": 99,
+    "total": 99
+  },
+  "sparsity": {
+    "users": 184,
+    "movies": 100,
+    "ratings": 688,
+    "density": 0.03739130434782609,
+    "sparsity": 0.9626086956521739
+  },
+  "baseline": {
+    "baseline_rmse": 0.9395096381687206
+  }
+}
