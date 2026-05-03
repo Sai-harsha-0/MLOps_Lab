@@ -1,16 +1,20 @@
 stages:
-  process:
-    cmd: python src/process_ratings.py
-    deps:
-      - data/raw/ratings.csv
-      - src/process_ratings.py
-    outs:
-      - data/processed/ratings_clean.csv
-
   features:
     cmd: python src/create_features.py
     deps:
-      - data/processed/ratings_clean.csv
-      - src/create_features.py
+    - data/processed/ratings_clean.csv
+    - src/create_features.py
     outs:
-      - models/user_similarity.pkl
+    - models/user_similarity.pkl
+
+  load:
+    cmd: python -m src.ingest
+    deps:
+    - data/raw/ratings.csv
+    - src/ingest.py
+    - src/config.py
+    outs:
+    - data/processed/ratings_clean.csv
+    metrics:
+    - evaluations/validation_report.json:
+        cache: false

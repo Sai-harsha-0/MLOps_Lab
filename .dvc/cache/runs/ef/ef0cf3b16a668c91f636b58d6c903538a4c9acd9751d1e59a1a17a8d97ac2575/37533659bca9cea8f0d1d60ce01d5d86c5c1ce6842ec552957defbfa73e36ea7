@@ -1,0 +1,23 @@
+cmd: python -m src.ingest
+deps:
+- path: data/raw/ratings.csv
+  hash: md5
+  md5: 31522e859f86e8d6f3ff409949f66f79
+  size: 68037
+- path: src/config.py
+  hash: md5
+  md5: acd54b8734c736203878a2114e94aa16
+  size: 1999
+- path: src/ingest.py
+  hash: md5
+  md5: e84c5c5a045b8965954f84cd1df532fe
+  size: 5666
+outs:
+- path: data/processed/ratings_clean.csv
+  hash: md5
+  md5: 756ec10b0046426acde7f228f260f911
+  size: 23689
+- path: evaluations/validation_report.json
+  hash: md5
+  md5: b4ef5d20a4ff13c779e794e36072e7dc
+  size: 50

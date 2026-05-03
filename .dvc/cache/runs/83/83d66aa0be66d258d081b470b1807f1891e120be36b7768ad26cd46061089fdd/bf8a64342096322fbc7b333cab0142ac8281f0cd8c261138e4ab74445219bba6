@@ -1,0 +1,15 @@
+cmd: python src/create_features.py
+deps:
+- path: data/processed/ratings_clean.csv
+  hash: md5
+  md5: 756ec10b0046426acde7f228f260f911
+  size: 23689
+- path: src/create_features.py
+  hash: md5
+  md5: 72f0ce43bb7bbb2dc832e27bf51dea3b
+  size: 1198
+outs:
+- path: models/user_similarity.pkl
+  hash: md5
+  md5: 24462b6b739faf38465cd7054127e1d9
+  size: 296456

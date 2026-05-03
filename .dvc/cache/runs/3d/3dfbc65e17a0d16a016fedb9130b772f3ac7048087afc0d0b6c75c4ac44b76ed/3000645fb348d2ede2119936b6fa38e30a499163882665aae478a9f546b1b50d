@@ -1,0 +1,15 @@
+cmd: python src/process_ratings.py
+deps:
+- path: data/raw/ratings.csv
+  hash: md5
+  md5: bd8458f97779e3a76c21ccaa70fd1b55
+  size: 40778
+- path: src/process_ratings.py
+  hash: md5
+  md5: eb1ea097fd1a4f7456cc100386c56462
+  size: 1469
+outs:
+- path: data/processed/ratings_clean.csv
+  hash: md5
+  md5: 4a3acf672c1f32bcf6a2557553f3bf39
+  size: 38699
